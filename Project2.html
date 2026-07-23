@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="Project2.css">
+</head>
+<body>
+
+    <h1>Expense Tracker</h1>
+
+    <form>
+
+        <label for="expenseName">Expense Name</label><br>
+        <input type="text" id="expenseName" placeholder="Enter Expense Name">
+        <br><br>
+
+        <label for="expenseAmount">Amount</label><br>
+        <input type="number" id="expenseAmount" placeholder="Enter Amount">
+        <br><br>
+
+        <label for="category">Category</label><br>
+
+        <select id="category">
+
+            <option value="">Select Category</option>
+            <option value="Food">Food</option>
+            <option value="Education">Education</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Travel">Travel</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Others">Others</option>
+
+        </select>
+
+        <br><br>
+
+        <button id="addExpenseBtn">Add Expense</button>
+
+    </form>
+
+    <hr>
+
+    <h2>Filter Expenses</h2>
+
+    <select id="filterCategory">
+
+        <option value="All">All</option>
+        <option value="Food">Food</option>
+        <option value="Education">Education</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Travel">Travel</option>
+        <option value="Entertainment">Entertainment</option>
+        <option value="Others">Others</option>
+
+    </select>
+
+    <hr>
+
+    <h2>Expense List</h2>
+
+    <div id="expenseList">
+
+    </div>
+
+    <hr>
+
+    <h2>Statistics</h2>
+
+    <div id="statistics">
+
+        <p>Total Expenses : <span id="totalExpenses">0</span></p>
+
+        <p>Total Amount : ₹<span id="totalAmount">0</span></p>
+
+        <p>Highest Expense : ₹<span id="highestExpense">0</span></p>
+
+        <p>Lowest Expense : ₹<span id="lowestExpense">0</span></p>
+
+        <p>Average Expense : ₹<span id="averageExpense">0</span></p>
+
+    </div>
+
+    <script src="Project2.js"></script>
+
+</body>
+</html>
